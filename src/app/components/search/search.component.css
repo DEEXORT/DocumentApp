@@ -1,0 +1,61 @@
+mat-grid-tile {
+  justify-content: left;
+  display: inline-flex;
+}
+
+.left-align-forced {
+  width: 100%;
+}
+
+.right-align-forced {
+  width: 100%;
+  text-align: right;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 20px auto;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.grid mat-form-field {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.grid mat-form-field:nth-child(1) {
+  grid-column: span 2;
+}
+
+.grid.search {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+}
+
+.grid.edit {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 20px auto;
+}
+
+.fill-archive {
+  background: #acb4ac;
+}
+
+.select-document .mat-mdc-cell {
+  font-weight: bold;
+}
+
+.container {
+  margin: 20px auto;
+}

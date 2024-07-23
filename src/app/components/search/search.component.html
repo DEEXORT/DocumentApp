@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="grid search">
+    <mat-form-field appearance="fill">
+      <mat-label>Вид документа:</mat-label>
+      <mat-select [(ngModel)]="searchDoc.type">
+        <mat-option *ngFor="let doc of typeDocs" [value]="doc.value">
+          {{doc.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Номер:</mat-label>
+      <input matInput (keyup)="filterTableByInput($event)" [(ngModel)]="searchDoc.number" value="">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="filterTable()">Найти</button>
+    <button mat-raised-button color="warn" (click)="clearFilter()">Очистить</button>
+  </div>
+
+  <div class="grid edit">
+    <button mat-raised-button
+            (click)="createDocument()">Добавить
+    </button>
+    <button mat-raised-button
+            (click)="editDocument()"
+            [disabled]="!documentForEdit.id">Редактировать
+    </button>
+    <button mat-raised-button color="warn"
+            (click)="deleteDocument()"
+            [disabled]="!documentForEdit.id">Удалить
+    </button>
+
+    <mat-checkbox
+      style="justify-self: right; align-self: center"
+      [(ngModel)]="checkedArchive"
+      (click)="filterTable()"
+      color="primary">Показать архивные
+    </mat-checkbox>
+  </div>
+
+  <div class="grid">
+    <table mat-table [dataSource]="dataSource"
+           class="mat-elevation-z8" matSort
+           (matSortChange)="sortChange($event)">
+
+      <ng-container matColumnDef="main">
+        <th mat-header-cell *matHeaderCellDef
+            mat-sort-header sortActionDescription="Сортировка по основному документу"></th>
+        <td mat-cell *matCellDef="let element">
+          <mat-icon *ngIf="element.main === true" aria-hidden="true" aria-label="Main Document"
+                    fontIcon="done"></mat-icon>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef
+            mat-sort-header sortActionDescription="Сортировка по виду документа"> Вид документа
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="serial">
+        <th mat-header-cell *matHeaderCellDef
+            mat-sort-header sortActionDescription="Сортировка по серии документа"> Серия
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.serial}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef
+            mat-sort-header sortActionDescription="Сортировка по номеру документа"> Номер
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef
+            mat-sort-header sortActionDescription="Сортировка по дате выдачи"> Дата выдачи
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.date | date:'dd.MM.yyyy'}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row
+          class="example-element-row"
+          *matRowDef="let row; columns: displayedColumns;"
+          [ngClass]="{'fill-archive': row.archive === true, 'select-document': row.id == documentForEdit.id}"
+          (click)="selectDocument(row)"
+      ></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"
+                   [length]="length"></mat-paginator>
+
+  </div>
+</div>

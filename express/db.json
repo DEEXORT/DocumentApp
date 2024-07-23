@@ -1,0 +1,307 @@
+{
+  "docs": [
+    {
+      "type": "паспорт",
+      "serial": "40 04",
+      "number": 897123,
+      "date": 1717200000,
+      "organization": "ГУ МВД Первого района",
+      "code": "999-999",
+      "main": true,
+      "archive": false,
+      "id": "1"
+    },
+    {
+      "id": "3",
+      "type": "св-во о рождении",
+      "serial": "XXII-AK",
+      "number": 927658,
+      "organization": "ГУ МВД Третьего района",
+      "code": "999-999",
+      "main": false,
+      "archive": true,
+      "date": 1681333200000
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XIX-IK",
+      "number": 2132312,
+      "date": 1681160400000,
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "pI90COZ"
+    },
+    {
+      "type": "паспорт",
+      "serial": "23 45",
+      "number": 245678,
+      "date": 1682456400000,
+      "organization": "ГУ МВД Второго района",
+      "code": "786-234",
+      "main": true,
+      "archive": false,
+      "id": "g0_ejuX"
+    },
+    {
+      "type": "св-во о рождении",
+      "serial": "XXI-KA",
+      "number": 854723,
+      "date": 1623704400000,
+      "organization": "ГУ МВД Второго района",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "MFuhxop"
+    },
+    {
+      "type": "паспорт",
+      "serial": "98 12",
+      "number": 674123,
+      "date": 1681074000000,
+      "organization": "ГУ МВД Первого района",
+      "code": "564-789",
+      "main": true,
+      "archive": false,
+      "id": "l0aLLH8"
+    },
+    {
+      "type": "паспорт",
+      "serial": "12 54",
+      "number": 748593,
+      "date": 771710400000,
+      "organization": "ГУ МВД Второго района",
+      "code": "736-495",
+      "main": true,
+      "archive": false,
+      "id": "I1PlF25"
+    },
+    {
+      "id": "bxHcPjV",
+      "type": "паспорт",
+      "serial": "64 23",
+      "number": 856349,
+      "date": -43642800000,
+      "organization": "ГУ МВД Второго района",
+      "code": "221311",
+      "main": true,
+      "archive": true
+    },
+    {
+      "id": "BsBmtdJ",
+      "type": "паспорт",
+      "serial": "65 12",
+      "number": 842626,
+      "date": 1683752400000,
+      "organization": "ГУ МВД Второго района",
+      "code": "214141",
+      "main": false,
+      "archive": true
+    },
+    {
+      "id": "MttU-jV",
+      "type": "св-во о рождении",
+      "serial": "XVI-AK",
+      "number": 265438,
+      "date": 1152648000000,
+      "organization": "ГУ МВД Третьего района",
+      "code": "",
+      "main": false,
+      "archive": false
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XXI-AK",
+      "number": 426362,
+      "date": 1684098000000,
+      "organization": "ГУ МВД Второго района",
+      "code": "734561",
+      "main": false,
+      "archive": false,
+      "id": "9zVAtgx"
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XXI-AK",
+      "number": 436362,
+      "date": 1684098000000,
+      "organization": "ГУ МВД Второго района",
+      "code": "734561",
+      "main": false,
+      "archive": false,
+      "id": "RqCV9VZ"
+    },
+    {
+      "type": "паспорт",
+      "serial": "34 34",
+      "number": 217643,
+      "date": 1684443600000,
+      "organization": "ГУ МВД Третьего района",
+      "code": "233165",
+      "main": true,
+      "archive": false,
+      "id": "VE-XF5l"
+    },
+    {
+      "type": "паспорт",
+      "serial": "87 12",
+      "number": 142411,
+      "date": 1684184400000,
+      "organization": "ГУ МВД Второго района",
+      "code": "572376",
+      "main": false,
+      "archive": false,
+      "id": "j1unnOm"
+    },
+    {
+      "type": "паспорт",
+      "serial": "43 34",
+      "number": 375431,
+      "date": 1683320400000,
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "jR_Z-6e"
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XX",
+      "number": 141241,
+      "date": "",
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "0Lc7mPH"
+    },
+    {
+      "type": "паспорт",
+      "serial": "42 14",
+      "number": 214124,
+      "date": 1684443600000,
+      "organization": "ГУ МВД Второго района",
+      "code": "436125",
+      "main": true,
+      "archive": true,
+      "id": "7EGvqEI"
+    },
+    {
+      "type": "паспорт",
+      "serial": "53 12",
+      "number": 515331,
+      "date": "",
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "_Hk17wR"
+    },
+    {
+      "type": "паспорт",
+      "serial": "86 12",
+      "number": 124513,
+      "date": "",
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "pO2KkVW"
+    },
+    {
+      "type": "паспорт",
+      "serial": "12 14",
+      "number": 241511,
+      "date": 1683579600000,
+      "organization": "ГУ МВД Второго района",
+      "code": "135135",
+      "main": false,
+      "archive": false,
+      "id": "IN4o84B"
+    },
+    {
+      "type": "паспорт",
+      "serial": "",
+      "number": 124142,
+      "date": "",
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "pD0Udtp"
+    },
+    {
+      "type": "паспорт",
+      "serial": "64 12",
+      "number": 451351,
+      "date": 1678741200000,
+      "organization": "ГУ МВД Второго района",
+      "code": "152321",
+      "main": false,
+      "archive": false,
+      "id": "ZwzmmB-"
+    },
+    {
+      "type": "паспорт",
+      "serial": "42 21",
+      "number": 513512,
+      "date": 1684270800000,
+      "organization": "ГУ МВД Третьего района",
+      "code": "",
+      "main": false,
+      "archive": false,
+      "id": "dVBXOfp"
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XX-AK",
+      "number": 234621,
+      "date": 1684184400000,
+      "organization": "ГУ МВД Третьего района",
+      "code": "135612",
+      "main": false,
+      "archive": true,
+      "id": "oMZg9K4"
+    },
+    {
+      "type": "загран. паспорт",
+      "serial": "XX-AK",
+      "number": 513512,
+      "date": 1684702800000,
+      "organization": "",
+      "code": "",
+      "main": false,
+      "archive": true,
+      "id": "9sb4zrC"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "1",
+      "name": "ГУ МВД Первого района"
+    },
+    {
+      "id": "2",
+      "name": "ГУ МВД Второго района"
+    },
+    {
+      "id": "3",
+      "name": "ГУ МВД Третьего района"
+    }
+  ],
+  "types": [
+    {
+      "id": "1",
+      "value": "паспорт"
+    },
+    {
+      "id": "2",
+      "value": "загран. паспорт"
+    },
+    {
+      "id": "3",
+      "value": "св-во о рождении"
+    }
+  ]
+}

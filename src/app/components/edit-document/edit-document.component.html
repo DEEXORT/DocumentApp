@@ -1,0 +1,67 @@
+<mat-toolbar>
+  <span>Документ</span>
+  <span class="spacer"></span>
+  <button mat-icon-button (click)="closeDocument()">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+
+<form [formGroup]="documentForm">
+  <div class="grid">
+    <mat-checkbox formControlName="main" name="main" color="primary">Основной документ, удостоверяющий личность
+    </mat-checkbox>
+
+    <mat-checkbox formControlName="archive" name="archive" color="primary">Архивный документ</mat-checkbox>
+  </div>
+
+  <div class="grid">
+    <mat-form-field>
+      <mat-label>Вид документа:</mat-label>
+      <mat-select formControlName="type">
+        <mat-option *ngFor="let doc of typeDocs" [value]="doc.value">
+          {{doc.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <mat-label>Серия:</mat-label>
+      <input matInput formControlName="serial" name="serial">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Номер:</mat-label>
+      <input type="number" matInput formControlName="number" name="number">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Дата выдачи:</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date" name="date">
+      <mat-hint>ДД.ММ.ГГГГ</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Организация, выдавшая документ:</mat-label>
+      <mat-select formControlName="organization">
+        <mat-option *ngFor="let organization of organizations" [value]="organization.name">
+          {{organization.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Код подразделения:</mat-label>
+      <input matInput formControlName="code" name="code" [mask]="mask" maxlength="7">
+    </mat-form-field>
+  </div>
+  <div class="grid">
+    <button mat-raised-button type="submit" color="primary" (click)="saveDocument()"
+            [disabled]="documentForm.invalid">Сохранить
+    </button>
+    <span class="spacer"></span>
+    <button mat-raised-button (click)="closeDocument()">Выход</button>
+  </div>
+</form>
